@@ -21,14 +21,14 @@ public:
         }
         q1.push(data);
 
-  while (!q2.empty())
+    while (!q2.empty())
         {
             q1.push(q2.front());
             q2.pop();
         }
     }
  
-  int pop()
+    int pop()
     {
         if (q1.empty())
         {
@@ -36,18 +36,18 @@ public:
             exit(0);
         }
  
-   int front = q1.front();
+    int front = q1.front();
      q1.pop();
  
-   return front;
+    return front;
     }
 };
  
-int main()
+ int main()
 {
     vector<int> keys = { 1, 2, 3, 4, 5 };
  
-   Stack s;
+    Stack s;
     for (int key: keys) {
         s.push(key);
     }
@@ -58,7 +58,7 @@ int main()
    cout << s.pop() << endl;
     }
  
-   return 0;
+    return 0;
 }
 
 
